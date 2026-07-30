@@ -61,3 +61,46 @@ p, h1, h2 {
     margin-bottom: 16px;
     border: none;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 15px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .container, .card, .box, div {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+}
